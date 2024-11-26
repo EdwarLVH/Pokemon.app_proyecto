@@ -76,14 +76,14 @@ const Home = () => {
   <button
     onClick={() => handlePageChange(-1)}
     disabled={currentPage === 1}
-    className="btn btn-primary" // Cambia btn-secondary a btn-primary
+    className="btn btn-primary" 
   >
     Previous
   </button>
   <button
     onClick={() => handlePageChange(1)}
     disabled={currentPage * itemsPerPage >= filteredPokemon.length}
-    className="btn btn-primary" // Cambia btn-secondary a btn-primary
+    className="btn btn-primary" 
   >
     Next
   </button>
