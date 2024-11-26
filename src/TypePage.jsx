@@ -3,7 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TypePage = () => {
-  const { type } = useParams(); // Capturamos el tipo desde la URL
+  const { type } = useParams(); 
   const [pokemonByType, setPokemonByType] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -12,7 +12,7 @@ const TypePage = () => {
     fetch(`https://pokeapi.co/api/v2/type/${type}`)
       .then((res) => res.json())
       .then((data) => {
-        // Extraemos solo los datos necesarios
+        
         setPokemonByType(data.pokemon.map((poke) => poke.pokemon));
       })
       .catch((error) => console.error('Error fetching Pokémon by type:', error))
@@ -27,7 +27,7 @@ const TypePage = () => {
       ) : (
         <div className="row">
           {pokemonByType.map((poke, index) => {
-            // Extraemos el ID del Pokémon desde la URL de la API
+            
             const id = poke.url.split('/').filter(Boolean).pop();
             return (
               <div className="col-md-3 mb-4" key={index}>
