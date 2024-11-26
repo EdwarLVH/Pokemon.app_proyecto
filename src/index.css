@@ -2,17 +2,17 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('https://images8.alphacoders.com/124/1243956.jpg'); /* Cambia la ruta a tu imagen */
-  background-size: cover; /* Para que la imagen cubra todo el fondo */
-  background-position: center; /* Centra la imagen */
-  color: #000000; /* Color de texto más oscuro para mejor legibilidad */
+  background-image: url('https://images8.alphacoders.com/124/1243956.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  color: #000000; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff; /* Color de encabezados */
+  color: #ffffff; 
 }
 
 .container {
-  max-width: 1200px; /* Ancho máximo para el contenedor */
-  margin: auto; /* Centrar el contenedor */
+  max-width: 1200px; 
+  margin: auto; 
 }
